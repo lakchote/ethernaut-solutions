@@ -1,6 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomiclabs/hardhat-ethers";
+import "@typechain/hardhat";
 
 const config: HardhatUserConfig = {
   solidity: {
@@ -12,6 +13,9 @@ const config: HardhatUserConfig = {
         "version": "0.8.9"
       },
     ]
+  },
+  typechain: {
+    outDir: "./typechain"
   }
 };
 

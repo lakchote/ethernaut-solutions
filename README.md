@@ -9,13 +9,10 @@ Currently doing a web2 -> web3 transition by learning Solidity and blockchain as
 You can reach me on [Twitter](https://twitter.com/d3legateCall).
 
 ## How to use
-
-1. Add your test wallet's private key in your .env file
-
-2. Install the dependencies
+1. Install the dependencies
 ```yarn install```
 
-3. Compile the contracts
+2. Compile the contracts
 ```yarn hardhat compile```
-4. Run the scripts that you want
-Example :```yarn hardhat run ./scripts/ethernaut/lvl5.ts```
+
+3. Run the scripts that you want, example :```yarn hardhat run ./scripts/ethernaut/lvl5.ts```
