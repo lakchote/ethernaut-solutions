@@ -4,9 +4,9 @@ This project intends to provide my solutions and highlights for the different Et
 
 Every script deploys vulnerable contract to ropsten and then exploits it.
 
-Currently doing a web2 -> web3 transition by learning Solidity and blockchain as a whole with [Encode Solidity Bootcamp](), I'm documenting my journey from start to finish.
+Currently doing a web2 -> web3 transition by learning Solidity and blockchain as a whole with [Encode Solidity Bootcamp](https://www.encode.club/solidity-bootcamps), I'm documenting my journey from start to finish.
 
-You can reach me on [Twitter]().
+You can reach me on [Twitter](https://twitter.com/d3legateCall).
 
 ## How to use
 
