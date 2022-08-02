@@ -1,7 +1,5 @@
 import { ethers } from "hardhat";
 import { Lvl2 } from "../../typechain";
-import dotenv from "dotenv";
-dotenv.config();
 
 /**
  * The vulnerability in level 2 resides in the pseudo constructor function Fallout() that attributes the owner role

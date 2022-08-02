@@ -1,7 +1,5 @@
 import { ethers } from "hardhat";
 import { Lvl1 } from "../../typechain";
-import dotenv from "dotenv";
-dotenv.config();
 
 /**
  * The vulnerability in level 1 lies in the fallback function (receive()).

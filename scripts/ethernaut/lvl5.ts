@@ -1,7 +1,5 @@
 import { ethers } from "hardhat";
 import { Lvl5 } from "../../typechain";
-import dotenv from "dotenv";
-dotenv.config();
 
 /**
  * The vulnerability in level 5 resides in an underflow problem.
